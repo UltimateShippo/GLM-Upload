@@ -34,7 +34,7 @@ This README is a **registry and control document**, not a replacement business p
 
 ### Primary document
 
-**[Bio_Source_Farm_Business_Plan_2026_Final 2.0.pdf](<Bio_Source_Farm_Business_Plan_2026_Final 2.0.pdf>)>**
+**[Bio_Source_Farm_Business_Plan_2026_Final 2.0.pdf](<Bio_Source_Farm_Business_Plan_2026_Final 2.0.pdf>)**
 
 This is the current canonical strategic and financing narrative for the repository.
 
@@ -53,7 +53,7 @@ It defines the current reference case:
 
 ### Editable counterpart
 
-**[Bio_Source_Farm_Business_Plan_2026_Final 2.0.docx](<Bio_Source_Farm_Business_Plan_2026_Final 2.0.docx>)>**
+**[Bio_Source_Farm_Business_Plan_2026_Final 2.0.docx](<Bio_Source_Farm_Business_Plan_2026_Final 2.0.docx>)**
 
 This is the editable document corresponding to the canonical plan title. Future agents should compare the PDF and DOCX before assuming they are byte-for-byte identical.
 
@@ -63,7 +63,7 @@ This is the editable document corresponding to the canonical plan title. Future 
 
 The repository also contains:
 
-**[BIO SOURCE FARM BP 3.1.pdf](<BIO SOURCE FARM BP 3.1.pdf>)>**
+**[BIO SOURCE FARM BP 3.1.pdf](<BIO SOURCE FARM BP 3.1.pdf>)**
 
 This file must be treated as a **legacy / alternative business-plan source requiring reconciliation**, not as an authority over Final 2.0.
 
@@ -143,9 +143,9 @@ These two fiscal years are the historical financial foundation of the canonical 
 
 Supporting evidence:
 
-- **[états financiers 2024 à 2025.pdf](<états financiers 2024 à 2025.pdf>)>**
-- **[Rapport financier BSF 2023-2025 Final.xlsx](<Rapport financier BSF 2023-2025 Final.xlsx>)>**
-- **[Rapport_Financier_BSF_2023-2025_Présentation.pdf](<Rapport_Financier_BSF_2023-2025_Présentation.pdf>)>**
+- **[états financiers 2024 à 2025.pdf](<états financiers 2024 à 2025.pdf>)**
+- **[Rapport financier BSF 2023-2025 Final.xlsx](<Rapport financier BSF 2023-2025 Final.xlsx>)**
+- **[Rapport_Financier_BSF_2023-2025_Présentation.pdf](<Rapport_Financier_BSF_2023-2025_Présentation.pdf>)**
 
 The certified financial statements are the authority for statutory historical figures. Analytical spreadsheets and presentations are supporting/reconciliation instruments, not replacements for certified accounts.
 
@@ -326,7 +326,7 @@ Canonical 12-step industrial chain:
 
 The process is documented in:
 
-**[BioSourceFarm_Master_SOP_Industriel.pdf](<BioSourceFarm_Master_SOP_Industriel.pdf>)>**
+**[BioSourceFarm_Master_SOP_Industriel.pdf](<BioSourceFarm_Master_SOP_Industriel.pdf>)**
 
 The SOP is a core technical asset and should be treated as the reference for process wording, controls, production logic and technical constraints.
 
@@ -601,7 +601,7 @@ Values below are **USD thousands (k USD)**.
 
 The separate:
 
-**[Bio_Source_Farm_Projections_Financieres_2026_2030.pdf](<Bio_Source_Farm_Projections_Financieres_2026_2030.pdf>)>**
+**[Bio_Source_Farm_Projections_Financieres_2026_2030.pdf](<Bio_Source_Farm_Projections_Financieres_2026_2030.pdf>)**
 
 is the detailed financial companion and should remain aligned with these values.
 
@@ -982,7 +982,7 @@ If the pitch deck differs from the canonical plan, the plan wins unless an expli
 
 ## 25.6 Business Plan ↔ Comoros technical sheet
 
-**[fiche_technique_bio_source_frass v2.5.pdf](<fiche_technique_bio_source_frass v2.5.pdf>)>**
+**[fiche_technique_bio_source_frass_comores v2.5.pdf](<fiche_technique_bio_source_frass_comores v2.5.pdf>)**
 
 This document is **geography-specific**.
 
