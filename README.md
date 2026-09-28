@@ -1,1970 +1,1441 @@
-# Bio Source Farm — AI Handoff & Funding Dossier Master Guide
+# Bio Source Farm — Document Intelligence Registry & AI Handoff Guide
 
-> **Purpose:** This README is the operating manual for any future human collaborator or AI agent working on Bio Source Farm (BSF) business plans, funding applications, investor materials, technical documents, impact reports, financial models, presentations or visual designs.
->
-> **Golden rule:** The repository is a document corpus, not a single truth table. Different files have different roles, dates, reliability levels and purposes. Never merge figures mechanically. Reconcile them first.
+> **Registry status:** Canonical repository guide updated on 28 September 2026.  
+> **Scope:** This README is the operating manual for any future human or AI work on the Bio Source Farm (B.S.F.) dossier contained in this repository.  
+> **Primary planning reference in this repository:** **Bio_Source_Farm_Business_Plan_2026_Final 2.0.pdf**.  
+> **Core financing case represented by that plan:** **USD 50,000 catalytic grant — ACCELEREO / PIC3 (World Bank)**.  
+> **Important:** The repository is a multi-document evidence base. Do not merge numbers from different files without reconciling their date, accounting perimeter, status and purpose.
 
 ---
 
-## 1. What this repository is
+## 1. Why this README exists
 
-**Bio Source Farm (BSF)** is a Madagascar-based circular-economy / agribusiness venture focused on the **bioconversion of organic waste using the Black Soldier Fly (BSF / *Hermetia illucens*)**, with the objective of turning organic waste streams into useful agricultural and feed-related products.
+The repository contains several generations and types of Bio Source Farm documentation: business plans, financial evidence, technical procedures, projections, banking evidence, a pitch deck and a Comoros-specific agronomic document.
+
+The most important risk for future analysis is **document drift**: a model, agent or collaborator may read a plausible number from the wrong file and silently insert it into a later business plan, investor memo, presentation or financial model.
+
+This README therefore establishes:
+
+1. the **canonical business plan** for the repository;
+2. the **role of every file**;
+3. the hierarchy between narrative, evidence, calculations and contextual material;
+4. the financial, operational and commercial facts that must remain aligned with the canonical plan;
+5. the numbers that must **not** be mixed across periods or document versions;
+6. the dependency chain between the business plan and the supporting documents;
+7. the protocol future AI agents should follow before modifying any BSF material.
+
+This README is a **registry and control document**, not a replacement business plan.
+
+---
+
+# 2. Canonical source of truth
+
+## 2.1 Canonical business plan
+
+### Primary document
+
+**[Bio_Source_Farm_Business_Plan_2026_Final 2.0.pdf](<Bio_Source_Farm_Business_Plan_2026_Final 2.0.pdf>)>**
+
+This is the current canonical strategic and financing narrative for the repository.
+
+It defines the current reference case:
+
+- Bio Source Farm, Toamasina, Madagascar;
+- bioconversion of homogeneous organic substrates using Hermetia illucens;
+- current commercial core: **Bio Source Frass™**;
+- future protein line: dried larval biomass, conditional on technical and regulatory validation;
+- future bioactivators/extracts: pre-commercialisation, targeted for a later phase;
+- financing request: **USD 50,000 catalytic grant**;
+- target programme: **ACCELEREO / PIC3 — World Bank**;
+- central financial scenario: **domestic, without export revenue**;
+- forecast horizon: **2026–2030**;
+- reference exchange rate: **4,500 MGA/USD**.
+
+### Editable counterpart
+
+**[Bio_Source_Farm_Business_Plan_2026_Final 2.0.docx](<Bio_Source_Farm_Business_Plan_2026_Final 2.0.docx>)>**
+
+This is the editable document corresponding to the canonical plan title. Future agents should compare the PDF and DOCX before assuming they are byte-for-byte identical.
+
+---
+
+## 2.2 What is NOT the canonical financing case
+
+The repository also contains:
+
+**[BIO SOURCE FARM BP 3.1.pdf](<BIO SOURCE FARM BP 3.1.pdf>)>**
+
+This file must be treated as a **legacy / alternative business-plan source requiring reconciliation**, not as an authority over Final 2.0.
+
+### Critical anti-drift rule
+
+The current canonical repository plan is **not** a TJE business plan.
+
+Do **not** import into the canonical repository model any financing case based on:
+
+- a **100,000,000 MGA TJE loan**;
+- a **120,000,000 MGA TJE total project**;
+- a **36-month 0% loan**;
+- a TJE repayment schedule;
+- a TJE-specific financing allocation;
+
+unless a future task explicitly asks to build or compare a separate TJE financing case.
+
+The repository inventory does not contain a dedicated TJE Croissance business plan. Therefore, a TJE case must never be silently substituted for the canonical ACCELEREO/PIC3 case.
+
+Likewise, historical business-plan variants outside the repository must not be treated as current merely because they contain similar names, figures or narratives.
+
+---
+
+# 3. Canonical executive model
+
+## 3.1 Business identity
+
+**Bio Source Farm (B.S.F.)** is a Madagascar-based circular-economy / agribusiness company operating in **Toamasina**.
+
+Core technology:
+
+**organic substrates → preparation → Black Soldier Fly bioconversion → frass + larval biomass → controlled finishing / quality control → agricultural and feed-related products**
 
 Core positioning:
 
-**"Turning Waste to Treasures"**
+> **Turning Waste to Treasures**
 
-The strategic narrative is:
+The company should not be described merely as a waste-management company. The canonical plan positions BSF at the intersection of:
 
-**organic waste -> controlled biological conversion -> frass / organic fertilizer + insect biomass -> higher-value agricultural and feed inputs -> farmer productivity + waste diversion + local value creation**
-
-BSF should not be presented as a generic "waste company". Its strongest business identity is the intersection of:
-
-- circular economy;
-- biological waste valorisation;
+- organic waste valorisation;
+- biological processing;
+- local agricultural inputs;
 - sustainable agriculture;
-- local production of agricultural inputs;
-- insect-based biomass / protein valorisation;
-- environmental and social impact;
-- scalable small-to-medium industrial processing.
-
-The company operates in **Toamasina, Madagascar**, with ambitions that can extend to other Malagasy regions and selected Indian Ocean / African markets.
+- insect biomass / protein;
+- industrial process discipline;
+- measurable environmental and social impact.
 
 ---
 
-# 2. How an AI agent must use this repository
+## 3.2 Current financing thesis
 
-Before writing anything, an agent should follow this order:
+The canonical plan asks for **USD 50,000** of catalytic financing.
 
-1. Read this README completely.
-2. Inventory all files in the repository.
-3. Separate:
-   - historical evidence;
-   - accounting / banking evidence;
-   - management data;
-   - technical operating data;
-   - projections;
-   - narrative / marketing material;
-   - legacy material.
-4. Extract the relevant information from the primary documents.
-5. Build a small reconciliation table before using conflicting numbers.
-6. Only then produce a business plan, pitch deck, grant application, lender dossier, design or financial model.
+The ticket is explicitly **not** presented as rescue financing for a structurally loss-making company. Its role is to remove the main constraints to the next operational stage:
 
-### Never do this
+**financing → equipment / drying → higher usable capacity → greater saleable production → B2B diversification → better margin / cash generation → stronger eligibility for the next financing stage**
 
-- Do not copy the first number found in a PDF.
-- Do not assume the newest filename is necessarily the authoritative version.
-- Do not treat a projection as historical performance.
-- Do not treat a bank statement as equivalent to an accounting statement.
-- Do not treat a pitch deck claim as audited evidence.
-- Do not invent figures to make a business plan "complete".
-- Do not silently average conflicting figures.
-- Do not annualise a partial or exceptional period without explicitly stating the method.
-- Do not present an assumption as a fact.
-- Do not upgrade a target into a proven capacity.
-- Do not convert a management estimate into a certified accounting figure.
-- Do not change BSF's logo or core identity without explicit instruction.
-- Do not disclose bank-account numbers, personal identifiers or unnecessary transaction-level sensitive information in public-facing outputs.
+The funding is therefore an acceleration mechanism, not the premise that makes the business exist.
 
 ---
 
-# 3. Document inventory
+# 4. Historical base: what is actually proven
 
-The current repository contains the following principal source documents.
+The canonical plan distinguishes evidence levels. This distinction must survive any future rewriting.
 
-| File | Primary role | Recommended trust/use level | Main use |
-|---|---|---|---|
-| `AVIS DE CREDIT_12766_74375430001-71_20250405.pdf` | Banking evidence | **Primary evidence for the specific transaction/document** | Verify a credit movement / banking event |
-| `BIO SOURCE FARM BP 3.1.pdf` | Business plan version | **Narrative source; reconcile before reuse** | Business model, market, strategy, financing narrative |
-| `BIO SOURCE FARMING Relevés BOA 2024 -2025.pdf` | BOA bank statements | **Primary banking evidence** | Cash movements, chronology, transaction verification |
-| `Bio Source Farm — Pitch Deck 2026.pdf` | Pitch / presentation | **Secondary narrative source** | Storytelling, traction, visual communication |
-| `BioSourceFarm_Master_SOP_Industriel.pdf` | Industrial SOP | **Primary technical/operational source** | Process, operations, controls, scale-up |
-| `Bio_Source_Farm_Business_Plan_2026_Final 2.0.pdf` | Business plan | **Key narrative / financing source; validate against financial evidence** | Funding dossiers and lender/investor narrative |
-| `Bio_Source_Farm_Projections_Financieres_2026_2030.pdf` | Financial projections | **Projection model source** | Forecast P&L / cash / economics |
-| `Rapport financier BSF 2023-2025 Final.xlsx` | Financial analytical workbook | **High-value analytical source** | Reconciliation, financial analysis, model inputs |
-| `Rapport_Financier_BSF_2023-2025_Présentation.pdf` | Financial presentation | **Secondary presentation of financial data** | Review / presentation / synthesis |
-| `Relevés de compte BNI 2024-2026.pdf` | BNI bank statements | **Primary banking evidence** | Cash-flow chronology and transaction verification |
-| `fiche_technique_bio_source_frass_comores v2.5.pdf` | Technical/agronomic sheet for Comoros | **Primary technical positioning for Comoros, subject to field validation** | Product use, agronomy, deployment |
-| `états financiers 2024 à 2025.pdf` | Financial statements | **Primary historical accounting source** | Certified / formal historical financial position and performance |
+## 4.1 Two certified fiscal years
 
-### Important versioning rule
+The auditable base is:
 
-The repository contains multiple generations of business plans, including:
+| Fiscal year | Certified CA | Certified net income |
+|---|---:|---:|
+| 2023–2024 | **146.0 M MGA / USD 32.43k** | **41.3 M MGA / USD 9.18k** |
+| 2024–2025 | **215.0 M MGA / USD 47.78k** | **66.6 M MGA / USD 14.79k** |
+| Cumulative | **361.0 M MGA / USD 80.21k** | **107.9 M MGA / USD 23.97k** |
 
-- **BP 3.1**
-- **Business Plan 2026 Final 2.0**
-- **Pitch Deck 2026**
-- **Financial projections 2026-2030**
+These two fiscal years are the historical financial foundation of the canonical plan.
 
-Do **not** infer document authority simply from "Final", "3.1", "2.0", etc.
+Supporting evidence:
 
-For each assignment, the agent must determine:
+- **[états financiers 2024 à 2025.pdf](<états financiers 2024 à 2025.pdf>)>**
+- **[Rapport financier BSF 2023-2025 Final.xlsx](<Rapport financier BSF 2023-2025 Final.xlsx>)>**
+- **[Rapport_Financier_BSF_2023-2025_Présentation.pdf](<Rapport_Financier_BSF_2023-2025_Présentation.pdf>)>**
 
-**Which document represents the intended submission version?**
-
-Then use the historical accounting / banking documents as the evidence layer behind that narrative.
+The certified financial statements are the authority for statutory historical figures. Analytical spreadsheets and presentations are supporting/reconciliation instruments, not replacements for certified accounts.
 
 ---
 
-# 4. Source-of-truth hierarchy
+## 4.2 2025 calendar-year management figure
 
-When two documents disagree, use the following default hierarchy.
+The canonical plan also contains a **2025 calendar-year management / analytical reconstruction of USD 61k CA and USD 12k EBITDA**.
 
-## Tier A — Formal historical evidence
+This figure has a different perimeter from the fiscal-year certified result.
 
-Use these first for historical financial claims:
+### Do not make this mistake
 
-1. `états financiers 2024 à 2025.pdf`
-2. `Rapport financier BSF 2023-2025 Final.xlsx`
-3. relevant bank statements:
-   - `BIO SOURCE FARMING Relevés BOA 2024 -2025.pdf`
-   - `Relevés de compte BNI 2024-2026.pdf`
-4. specific banking documents such as the credit advice.
+Do **not** add:
 
-These sources answer questions such as:
+- USD 61k calendar 2025
 
-- What actually happened in the accounts?
-- What cash movements can be demonstrated?
-- What amounts were actually received / paid?
-- What period is formally covered?
-- Can a stated historical figure be supported?
+to:
 
-## Tier B — Operating / technical evidence
+- USD 80.21k certified cumulative 2023–2025
 
-Primary technical source:
+to create a fictional historical total.
 
-- `BioSourceFarm_Master_SOP_Industriel.pdf`
+The first half of calendar 2025 overlaps the fiscal year ended 30 June 2025.
 
-Use it for:
+The rule is:
 
-- production process;
-- workflow;
-- biological cycle;
-- equipment / process logic;
-- operating controls;
-- industrial scale assumptions;
-- quality and risk management.
-
-## Tier C — Formal business narrative
-
-Use:
-
-- `Bio_Source_Farm_Business_Plan_2026_Final 2.0.pdf`
-- `BIO SOURCE FARM BP 3.1.pdf`
-
-These are useful for:
-
-- problem / solution;
-- market narrative;
-- business model;
-- strategy;
-- financing rationale;
-- organization;
-- impact story.
-
-But narrative documents must always be reconciled against Tier A evidence when they make quantitative claims.
-
-## Tier D — Projections
-
-Use:
-
-- `Bio_Source_Farm_Projections_Financieres_2026_2030.pdf`
-
-This is a **forecast layer**, not evidence of realized performance.
-
-Every projected number should be traceable to an explicit assumption:
-
-- volume;
-- price;
-- utilisation;
-- product mix;
-- capacity;
-- headcount;
-- operating costs;
-- CAPEX;
-- financing cost;
-- working capital;
-- timing.
-
-## Tier E — Presentation / communication
-
-Use:
-
-- `Bio Source Farm — Pitch Deck 2026.pdf`
-- `Rapport_Financier_BSF_2023-2025_Présentation.pdf`
-
-These are valuable for storytelling and visual structure but should not silently override primary data.
-
-## Tier F — Market / product adaptation
-
-Use:
-
-- `fiche_technique_bio_source_frass_comores v2.5.pdf`
-
-This should guide the **Comoros-specific agronomic and market adaptation**. It should not automatically become the technical specification for Madagascar or another country.
+> **Fiscal certified data = accounting history. Calendar management data = analytical bridge. Projected data = model. Never sum overlapping periods.**
 
 ---
 
-# 5. Company identity and strategic narrative
+## 4.3 30 June 2025 balance-sheet position
 
-## 5.1 Core identity
+The canonical plan reports approximately:
 
-**Company:** Bio Source Farm (BSF)
+- total assets: **131.7 M MGA**;
+- net tangible fixed assets: **21.8 M MGA**;
+- inventories: **31.4 M MGA**;
+- trade receivables: **12.4 M MGA**;
+- available cash: **66.1 M MGA**;
+- financial debt: **nil**;
+- share capital / capital base: **20.0 M MGA**.
 
-**Country:** Madagascar
+Use the certified financial statements for exact accounting interpretation.
 
-**Operational base:** Toamasina
-
-**Domain:** Circular economy, organic waste valorisation, sustainable agriculture, insect bioconversion.
-
-**Core technology:** Black Soldier Fly (*Hermetia illucens*) biological conversion of suitable organic substrates.
-
-**Core promise:**
-
-> Turn under-utilised organic waste into productive agricultural and biomass resources.
-
-### Positioning that generally works well
-
-BSF should be positioned as an **industrialising circular bioeconomy platform**, not merely as a compost producer.
-
-The strongest narrative chain is:
-
-**waste problem -> reliable feedstock -> biological process -> controlled conversion -> standardised products -> agricultural value -> measurable environmental/social impact -> scalable business**
+Do not expose bank-account numbers in public derivative documents.
 
 ---
 
-# 6. Business model map
+# 5. Company and legal status
 
-The business model has several interconnected value streams.
+The canonical plan describes:
 
-## 6.1 Feedstock
+- legal form at the time of the plan: **Entreprise Individuelle (EI)**;
+- conversion to **SARL** already engaged;
+- targeted completion: **Q4 2026**;
+- conversion / publication of the SARL registration is treated as a **condition for financing disbursement** in the plan;
+- fiscal year: **1 July to 30 June**;
+- operating site: Toamasina;
+- gérance: **RASOLOMAMPIONONA Tendry Ny Aina Joelson**;
+- operational structure: four complementary management functions plus the wider founding team;
+- current declared operational workforce: **16 ETP** in the plan baseline.
 
-Potential feedstock streams documented in the BSF context include:
+### Data-security rule
 
-- fruit-processing residues;
-- market / food organic residues;
-- other suitable organic fractions;
-- industrial organic by-products where quality and safety permit.
+Business plans, README files, pitches and AI prompts must not reproduce:
 
-Known examples in the broader BSF dossier include streams associated with fruit processors and market waste.
+- full bank-account numbers;
+- personal banking identifiers;
+- private credentials;
+- unnecessary personal contact details;
+- confidential documentary identifiers that do not serve the analytical purpose.
 
-Important:
+Such evidence may be referenced as a supporting file without exposing its sensitive content.
 
-**Organic waste quantity alone is not the same as usable feedstock.**
+---
 
-Future dossiers should distinguish:
+# 6. Repository inventory
 
-- total waste generated;
-- technically suitable fraction;
-- contamination-adjusted fraction;
-- seasonality;
-- logistics radius;
+The repository contains the following files. Each file has a specific role and must be interpreted accordingly.
+
+| File | Primary role | Authority |
+|---|---|---|
+| [AVIS DE CREDIT_12766_74375430001-71_20250405.pdf](<AVIS DE CREDIT_12766_74375430001-71_20250405.pdf>) | Bank transaction evidence / credit advice | **Primary evidence for that transaction** |
+| [BIO SOURCE FARM BP 3.1.pdf](<BIO SOURCE FARM BP 3.1.pdf>) | Legacy / alternative business plan | **Comparative; reconcile before use** |
+| [BIO SOURCE FARMING Relevés BOA 2024 -2025.pdf](<BIO SOURCE FARMING Relevés BOA 2024 -2025.pdf>) | Banking evidence | **Primary evidence for cash movements covered** |
+| [Bio Source Farm — Pitch Deck 2026.pdf](<Bio Source Farm — Pitch Deck 2026.pdf>) | Presentation / communication layer | **Secondary** |
+| [BioSourceFarm_Master_SOP_Industriel.pdf](<BioSourceFarm_Master_SOP_Industriel.pdf>) | Technical production SOP | **Primary technical reference** |
+| [Bio_Source_Farm_Business_Plan_2026_Final 2.0.docx](<Bio_Source_Farm_Business_Plan_2026_Final 2.0.docx>) | Editable canonical plan | **Canonical planning source** |
+| [Bio_Source_Farm_Business_Plan_2026_Final 2.0.pdf](<Bio_Source_Farm_Business_Plan_2026_Final 2.0.pdf>) | Final canonical plan | **Canonical planning source** |
+| [Bio_Source_Farm_Projections_Financieres_2026_2030.pdf](<Bio_Source_Farm_Projections_Financieres_2026_2030.pdf>) | Five-year financial model / bridge | **Primary model reference** |
+| README.md | Document-control and AI-handoff registry | **Governance layer, not financial evidence** |
+| [Rapport financier BSF 2023-2025 Final.xlsx](<Rapport financier BSF 2023-2025 Final.xlsx>) | Financial analysis / reconciliation | **Secondary to certified accounts** |
+| [Rapport_Financier_BSF_2023-2025_Présentation.pdf](<Rapport_Financier_BSF_2023-2025_Présentation.pdf>) | Financial presentation | **Secondary** |
+| [Relevés de compte BNI 2024-2026.pdf](<Relevés de compte BNI 2024-2026.pdf>) | Bank statements | **Primary cash evidence** |
+| [fiche_technique_bio_source_frass_comores v2.5.pdf](<fiche_technique_bio_source_frass_comores v2.5.pdf>) | Comoros-specific agronomic adaptation | **Geography-specific technical reference** |
+| [états financiers 2024 à 2025.pdf](<états financiers 2024 à 2025.pdf>) | Certified accounts | **Primary historical financial evidence** |
+
+---
+
+# 7. Evidence hierarchy
+
+Use this hierarchy when files disagree.
+
+## Level A — Primary evidence
+
+Use first for factual verification:
+
+- certified financial statements;
+- bank statements and bank credit notices;
+- signed contracts / official purchase orders when available;
+- laboratory reports;
+- production records;
+- the **Master SOP** for the actual documented process.
+
+## Level B — Canonical management model
+
+Use for the current strategic case:
+
+- **Business Plan 2026 Final 2.0**;
+- Financial Projections 2026–2030.
+
+These are authoritative for the **modelled plan**, not automatically for historical facts.
+
+## Level C — Communication and interpretation
+
+Use for:
+
+- pitch deck;
+- financial presentation.
+
+These can simplify or visualise the case but must not silently overwrite Level A or the canonical plan.
+
+## Level D — Legacy / contextual material
+
+Examples:
+
+- BP 3.1;
+- geography-specific adaptation documents when discussing Madagascar rather than Comoros;
+- previous investment narratives not selected as the current financing case.
+
+A Level D document can be valuable, but it must be explicitly labelled as such.
+
+---
+
+# 8. Business model
+
+## 8.1 Input
+
+Bio Source Farm targets homogeneous organic fractions from sources such as:
+
+- agro-industrial residues;
+- markets;
+- restaurants;
+- agricultural / livestock-related organic residues;
+- fruit-processing residues.
+
+The canonical plan deliberately avoids inventing a national “addressable organic waste” figure. The commercial opportunity is defined locally around feedstock that can actually be sourced, transported, prepared and processed.
+
+---
+
+## 8.2 Process
+
+Canonical 12-step industrial chain:
+
+1. sourcing of organic substrates;
+2. collection and transport;
+3. reception and quality control;
+4. preparation, grinding and formulation;
+5. inoculation with larvae at the defined age;
+6. larval bioconversion;
+7. separation of larvae and frass;
+8. drying and transformation;
+9. quality control;
+10. conditioning and storage;
+11. B2B/B2C distribution;
+12. post-sale monitoring and feedback.
+
+The process is documented in:
+
+**[BioSourceFarm_Master_SOP_Industriel.pdf](<BioSourceFarm_Master_SOP_Industriel.pdf>)>**
+
+The SOP is a core technical asset and should be treated as the reference for process wording, controls, production logic and technical constraints.
+
+---
+
+# 9. Product architecture
+
+The canonical business plan contains **three product lines with different maturity levels**.
+
+## 9.1 Core revenue product — Bio Source Frass™
+
+Organic fertilizer / frass.
+
+Canonical plan price reference:
+
+- **1,700–2,100 MGA/kg** as product-price range;
+- modelled FDA reference: **1,890 MGA/kg**;
+- modelled direct B2B reference: **2,000 MGA/kg**.
+
+This is the primary commercial product and the principal source of current revenue.
+
+### Important
+
+Do not replace the canonical plan's price range with a generic old “1,000 MGA/kg” statement without specifying that the figure comes from another document or a different commercial scenario.
+
+---
+
+## 9.2 Conditional growth product — dried larval protein
+
+Target:
+
+- **USD 1,500–1,800/t** from 2027 under the contractual / market assumptions used by the model.
+
+Status:
+
+- future revenue stream;
+- technical qualification required;
+- regulatory pathway required;
+- no assumption of immediate mass-market sales.
+
+The canonical plan explicitly states that the animal-feed classification and authorization pathway must be confirmed before large-scale commercialisation.
+
+---
+
+## 9.3 Future product — bioactivators / extracts
+
+Status:
+
+- pilot / pre-commercialisation;
+- 2026–2027 development phase;
+- potential launch target around 2028;
+- price to be defined at launch.
+
+Do not present this line as current recurring revenue.
+
+---
+
+# 10. Technical yield and biological assumptions
+
+The canonical plan uses an internal mass-balance assumption approximately equivalent to:
+
+**1 tonne incoming substrate → 300 kg dry frass + 150 kg fresh larvae**
+
+The remaining mass is treated mainly as water evaporated / recycled and process losses.
+
+### Critical rule
+
+These are **internal operating assumptions**, not universal biological constants.
+
+Future documents must not convert them into language such as:
+
+- “BSF always produces 30% frass”;
+- “the technology guarantees 15% larvae”;
+- “this is the universal industrial yield”.
+
+The actual result depends on:
+
+- substrate composition;
 - moisture;
-- pre-processing requirements;
-- collection cost;
-- contractual availability.
+- formulation;
+- larval density;
+- temperature;
+- process discipline;
+- drying losses;
+- measurement basis.
 
-## 6.2 Biological conversion
-
-The core process is based on the controlled rearing of Black Soldier Fly larvae and associated organic matter stabilisation.
-
-The operating cycle should be described through the actual SOP rather than generic internet descriptions.
-
-Do not invent biological conversion ratios.
-
-## 6.3 Product streams
-
-### Bio Source Frass
-
-Key product positioning:
-
-- organic fertiliser / soil amendment;
-- organic matter contribution;
-- plant nutrient contribution;
-- calcium contribution;
-- biological / chitin-related value where technically substantiated;
-- local production and proximity to farmers.
-
-Previously documented product specifications include values around:
-
-- N: 3
-- P: 0.5
-- K: 2
-- organic matter: 64%
-- moisture: around 17%
-- dry matter: around 19%
-- Ca: around 5%
-
-**Critical instruction:** These numbers are product-document values and must be checked against the latest laboratory certificate / technical sheet before being presented as a guaranteed specification.
-
-The product should not be described as a magical universal solution. Application rates must be adapted to:
-
-- crop;
-- soil;
-- nutrient demand;
-- previous fertility;
-- yield objective;
-- water regime;
-- agronomic calendar.
-
-### Insect larvae / biomass
-
-BSF also generates larval biomass, with possible forms including:
-
-- fresh larvae;
-- dried larvae;
-- processed biomass;
-- feed ingredients / blends where legally and technically permitted.
-
-### Exofeed
-
-The broader product architecture has included dried larvae and powdered forms positioned for feed-related applications.
-
-### Exoboost
-
-A liquid-oriented agricultural input / biostimulant positioning has also appeared in previous BSF materials.
-
-For every product, future agents must separate:
-
-- proven product;
-- commercially sold product;
-- pilot product;
-- target product;
-- future product.
+The SOP and production records are the technical verification sources.
 
 ---
 
-# 7. Known operational baseline
+# 11. Capacity trajectory
 
-The broader BSF project record contains an operational baseline that future agents may use as a **management / operating reference**, not as automatically certified accounting evidence.
+Canonical monthly frass capacity trajectory:
 
-Documented figures include:
+| Year | Monthly capacity target |
+|---|---:|
+| 2025 | **10 t/month** |
+| 2026 | **18–22 t/month** by year-end |
+| 2027 | **26 t/month** |
+| 2028 | **36 t/month** |
+| 2029 | **46 t/month** |
+| 2030 | **56 t/month** |
 
-- company created in 2023;
-- progression from an initial test setup to a larger approximately 400-bin unit;
-- around 16 employees in the operating baseline;
-- roughly 1.6 tonnes of substrate/day;
-- roughly 20 tonnes of frass/month;
-- roughly 300-500 kg fresh larvae/month;
-- a biological/production cycle on the order of approximately two weeks in the current process architecture;
-- documented larval cycles used as evidence of operational learning;
-- tropical-acclimatised BSF strain / line as described in internal materials.
+### Critical interpretation
 
-### How to use these figures
+**18–22 t/month in 2026 is a year-end capacity target, not an annual average production volume.**
 
-An AI agent may use them to build an operating model, but should write:
+This distinction is essential.
 
-- "current operating baseline";
-- "observed / management-reported capacity";
-- "target capacity";
-- or "validated industrial capacity"
-
-only when the supporting source justifies that wording.
-
-Never multiply a daily input figure by 365 and call the result "annual production" without accounting for:
-
-- working days;
-- seasonality;
-- downtime;
-- maintenance;
-- biological losses;
-- substrate variability;
-- maturation / drying constraints;
-- market absorption;
-- working capital.
+The business plan explicitly models a progressive ramp-up rather than twelve months of full operation at the year-end rate.
 
 ---
 
-# 8. Historical financial interpretation
+# 12. Human resources and productivity
 
-This section is deliberately explicit because financial misunderstanding is one of the biggest risks in future funding dossiers.
+Canonical baseline:
 
-## 8.1 Two different questions must always be separated
+- **16 ETP** in 2025–2026;
+- 14 production workers plus 2 senior production workers in the operating baseline;
+- 19 ETP target by end-2026;
+- 26 in 2027;
+- 34 in 2028;
+- 43 in 2029;
+- 52 in 2030.
 
-### Question A — Accounting performance
+Productivity assumptions:
 
-What does the formal accounting evidence show?
+- around **0.63 t/month/ETP** at the current operating baseline;
+- target around **1.0–1.1 t/month/ETP** after mechanisation.
 
-Use:
+The mechanism behind the productivity improvement is not “more people”. It is primarily:
 
-- formal financial statements;
-- financial workbook;
-- accounting documentation.
-
-### Question B — Cash / liquidity behaviour
-
-What happened to the bank account?
-
-Use:
-
-- BNI statements;
-- BOA statements;
-- credit notices;
-- transaction chronology.
-
-**Accounting profit and bank cash are not interchangeable.**
+- drying;
+- screening;
+- workflow improvement;
+- higher utilisation of fixed assets;
+- reduced manual bottlenecks.
 
 ---
 
-## 8.2 Exceptional financing and treasury events
+# 13. Commercial model
 
-The BSF history includes a period where early CAPEX, operating needs and OPEX were supported through private financing / advances and where substantial repayment occurred over a relatively compressed period.
+## 13.1 Current concentration
 
-This repayment history materially affected treasury.
+The canonical plan identifies a strong dependence on the institutional channel.
 
-A future business plan must therefore avoid the simplistic statement:
+Current / base mix used by the model:
 
-> "BSF was unprofitable because cash fell."
+- FDA / institutional: approximately **86.9%**;
+- direct B2B/B2C: approximately **13.1%**.
 
-The correct analytical distinction is:
+This is simultaneously:
 
-- operational profitability;
-- accounting result;
-- financing cash flows;
-- debt / advance repayment;
-- CAPEX;
-- working capital;
-- exceptional treasury pressure.
-
-Where the historical record supports it, the 2026 exceptional cash pressure should be shown as a **financing / treasury event**, not automatically interpreted as steady-state operating weakness.
+- a commercial asset because of volume and institutional demand;
+- a concentration risk because one channel is disproportionately important.
 
 ---
 
-# 9. The 2025 / 2026 period must be handled carefully
+## 13.2 Diversification strategy
 
-The BSF dossier contains important context around a period of underperformance / weak or exceptional treasury conditions.
+The strategic objective is to increase non-FDA revenue without assuming a guaranteed continuation of historical programmes.
 
-Future agents must preserve the distinction between:
+Central revenue mix:
 
-- a normal operating year;
-- a partial fiscal period;
-- a transition period;
-- a financing-repayment period;
-- a point-in-time treasury snapshot;
-- a steady-state forecast.
-
-The internal BSF context indicates that the **July 2025-June 2026 period should not be used as a simplistic representative steady-state year**, particularly because of exceptional repayment dynamics.
+| Year | FDA / institutional | Direct frass | Dried proteins | Export |
+|---|---:|---:|---:|---:|
+| 2026 | 56k USD | 24k USD | 0 | 0 |
+| 2027 | 84k USD | 46k USD | 15k USD | 0 |
+| 2028 | 123k USD | 64k USD | 38k USD | 0 |
+| 2029 | 154k USD | 98k USD | 63k USD | 0 |
+| 2030 | 193k USD | 132k USD | 95k USD | 0 |
 
 Therefore:
 
-### Do not
+- non-FDA share rises from **30% in 2026**;
+- to **42% in 2027**;
+- **45% in 2028**;
+- **51% in 2029**;
+- **54% in 2030**.
 
-- replace certified historical years with a weak exceptional period;
-- hide the weak period;
-- pretend it did not exist;
-- create an artificial "normalised" year without explaining the adjustment.
+### Export rule
 
-### Do
+Export exists in the strategy but **not in the central financial case**.
 
-Explain the mechanism:
+Potential markets named by the plan include:
 
-**historical operations + financing structure + exceptional repayment -> treasury stress -> transition / reset -> future operating scaling**
+- Mauritius;
+- Réunion;
+- Comoros.
 
-A lender or evaluator should be able to understand why a cash account can be stressed while the underlying business still has a credible operating case.
-
----
-
-# 10. Financial-modeling rules for future AI agents
-
-Every financial model generated from this repository must have an assumption architecture.
-
-## 10.1 Minimum structure
-
-At minimum:
-
-1. Historical financials
-2. Revenue build-up
-3. COGS / direct costs
-4. OPEX
-5. Payroll
-6. CAPEX
-7. Working capital
-8. Financing
-9. P&L
-10. Cash flow
-11. Balance sheet where appropriate
-12. Key ratios
-13. Sensitivity analysis
-14. Sources and uses of funds
-
-## 10.2 Revenue model
-
-Revenue must be built from operating drivers.
-
-Preferred logic:
-
-**Revenue = volume sold x realised price**
-
-not:
-
-**Revenue = desired funding story**
-
-For each product:
-
-- unit;
-- monthly volume;
-- utilisation;
-- average selling price;
-- seasonality;
-- channel;
-- customer concentration;
-- ramp-up;
-- payment terms.
-
-## 10.3 Capacity model
-
-Separate:
-
-- biological capacity;
-- installed physical capacity;
-- practical capacity;
-- sales capacity;
-- demand-supported capacity.
-
-The maximum of one should never automatically become the forecast of another.
-
-## 10.4 Cost model
-
-Distinguish:
-
-### Variable / direct costs
-
-Examples:
-
-- collection / logistics;
-- feedstock preparation;
-- packaging;
-- direct production consumables;
-- production labour where genuinely variable;
-- quality-control costs tied to production.
-
-### Fixed / semi-fixed costs
-
-Examples:
-
-- administration;
-- management;
-- rent / site costs;
-- maintenance;
-- insurance;
-- communications;
-- software;
-- professional fees;
-- depreciation;
-- utilities not directly proportional to production.
-
-## 10.5 CAPEX
-
-For every CAPEX item show:
-
-- item;
-- quantity;
-- unit cost;
-- total cost;
-- useful life;
-- commissioning date;
-- financing source;
-- expected operational effect.
-
-A funding request should always answer:
-
-**What does this CAPEX unlock?**
-
-Examples:
-
-- +X tonnes/month;
-- reduce processing bottleneck;
-- reduce labour per tonne;
-- improve quality;
-- reduce mortality;
-- improve traceability;
-- reduce unit cost;
-- unlock a customer / product.
-
-A CAPEX item without an operating consequence is a warning sign.
+Activation is conditional on quality / regulatory / certification milestones.
 
 ---
 
-# 11. Funding strategy context
+# 14. B2B pipeline discipline
 
-The BSF financing history has included exploration of different instruments and funding partners.
-
-The repository should be used to support several possible funding architectures, not one generic "ask".
-
-### Known financing contexts in the BSF dossier include
-
-- grant / catalytic funding programmes;
-- institutional / development funding;
-- local bank financing;
-- concessional / zero-interest-style financing;
-- private or partner-supported historical financing;
-- technical assistance and award-linked support.
-
-A previously explored funding need was around **US$50,000** in a smaller / earlier growth context.
-
-A more recent local financing pathway has been adapted toward **BNI Madagascar / TJE Croissance 2026**, with a financing ceiling around **100,000,000 MGA** and a zero-interest loan concept as described in the internal financing work.
-
-These amounts are **context-dependent funding targets**, not permanent corporate requirements.
-
-Future agents must always ask:
-
-- Which funder?
-- Grant, loan, equity, blended finance?
-- Maximum eligible amount?
-- Eligible expenditure?
-- Required co-financing?
-- Repayment conditions?
-- Guarantee requirement?
-- Reporting requirements?
-- Environmental / social safeguards?
-- Timeline?
-- Geographic eligibility?
-
-Never reuse an old funding ask just because it already exists in a previous BP.
-
----
-
-# 12. Historical projects and traction context
-
-The broader BSF record contains evidence of project execution and market traction that can strengthen future funding dossiers.
+The canonical plan contains a qualified B2B pipeline.
 
 Examples include:
 
-## Symabio
+- rice grower associations around Ambatondrazaka;
+- Somafert Est;
+- a complementary SCRIMAD perimeter;
+- the Tsara Voasarimanga cooperative;
+- Anjoma fruit processing;
+- Masoandro poultry;
+- pepper producers around Ivondro;
+- urban garden retailers in Tamatave;
+- Mananara horticultural network;
+- Lakana aquaculture.
 
-A commercial engagement around approximately **100 tonnes of Bio Source Frass** at a previously documented price around **2,000 MGA/kg**.
+### Non-negotiable interpretation rule
 
-This should be presented as a commercial traction signal only to the extent supported by invoices / contracts / proof of delivery in the relevant source documents.
+A:
 
-## MCC / Manakara coffee
+- contact,
+- meeting,
+- sample,
+- demonstration,
+- verbal agreement,
 
-Application context documented around robusta coffee, including approximately:
+is **not** a contract, invoice, account receivable or committed revenue.
 
-- 70 ha;
-- older coffee trees;
-- a working dose architecture around 2.5 t/ha in the historic agronomic context;
-- pre-rain and maintenance application logic;
-- targeted improvement in cherry production.
-
-This is useful as agronomic field-validation context.
-
-Do not automatically convert a target yield increase into a proven causal impact unless backed by an experimental design and measured data.
-
-## CI-AAP
-
-Documented project context included:
-
-- sensitisation / farmer engagement;
-- training;
-- project tranche financing;
-- multiple participating farmer organisations / groups.
-
-Use as impact / field implementation evidence where the documentation supports it.
-
-## Prix Pierre Castel 2024
-
-BSF was documented as a **2nd laureate**, with associated **€10,000 coaching/support** in the wider project record.
-
-This may support credibility, recognition and ecosystem validation.
-
-However, an award must not be presented as equivalent to investment, revenue, customer validation or debt capacity.
+For financing milestones, only documented commercial evidence such as signed contracts, purchase orders or equivalent verified commitments should be treated as contracted business.
 
 ---
 
-# 13. Waste-supply strategy
+# 15. Unit economics
 
-A funding dossier should not say only:
+Canonical 2025 management indicators:
 
-> "There is a lot of organic waste in Madagascar."
+- direct frass production cost: approximately **USD 212/t**;
+- weighted average selling price: approximately **USD 444/t**;
+- contribution margin before certain commercial / structural costs: approximately **USD 232/t**;
+- indicative unit contribution: approximately **52%**.
 
-The relevant business question is:
+### Do not confuse unit economics with consolidated accounting margins
 
-**How much suitable organic substrate can BSF secure, where, at what quality, at what cost, with what seasonality and under what contractual conditions?**
+The canonical plan explicitly separates:
 
-Previous BSF documentation has included waste-source relationships with fruit-processing / market actors.
+- production direct cost;
+- contribution margin;
+- gross margin;
+- EBITDA;
+- net income.
 
-A future agent should build a waste supply table with:
+They are not interchangeable.
 
-| Supplier | Waste type | Theoretical volume | Usable volume | Seasonality | Distance | Pre-treatment | Cost | Contract status | Evidence |
-|---|---|---:|---:|---|---:|---|---:|---|---|
-
-This table is far more credible to a lender than a generic city-wide waste estimate.
-
----
-
-# 14. Agronomy: Bio Source Frass
-
-The **Bio Source Frass** product should be treated as an agricultural input whose value depends on both nutrient composition and agronomic context.
-
-## 14.1 Core messaging
-
-The product can be positioned around:
-
-- organic matter;
-- plant nutrients;
-- calcium;
-- circular origin;
-- local availability;
-- soil fertility improvement;
-- contribution to reduced dependence on externally sourced inputs.
-
-## 14.2 What an AI agent must avoid
-
-Never claim:
-
-- universal dosage;
-- guaranteed yield increase for every crop;
-- pesticide replacement;
-- disease cure;
-- guaranteed soil restoration;
-- universal NPK equivalence to a synthetic fertiliser;
-- guaranteed biological claims not supported by laboratory / trial evidence.
-
-## 14.3 Comoros adaptation
-
-The file:
-
-`fiche_technique_bio_source_frass_comores v2.5.pdf`
-
-is specifically intended to adapt the product to **Comoros**.
-
-Its use should consider:
-
-- soil type;
-- crop;
-- rainfall;
-- slope / erosion;
-- organic matter status;
-- local nutrient limitations;
-- access to fertiliser;
-- farmer economics;
-- application method;
-- crop calendar.
-
-The historic BSF positioning has favoured an economically realistic baseline around **1 t/ha** in contexts where Bio Source Frass is positioned as a complete organic fertiliser.
-
-That baseline must never be copied blindly across crops or countries. The technical sheet and actual trials remain the reference.
+Similarly, LTV/CAC is retained only as a directional metric and is **not the principal investment KPI** because the aggregated customer basket mixes very different channels.
 
 ---
 
-# 15. Impact model
+# 16. Financial model — canonical five-year case
 
-BSF's impact story should be measurable.
+## 16.1 Central P&L
 
-## Environmental
+Values below are **USD thousands (k USD)**.
 
-Potential indicators:
+| Metric | 2025 management | 2026 | 2027 | 2028 | 2029 | 2030 |
+|---|---:|---:|---:|---:|---:|---:|
+| Revenue | 61 | 80 | 145 | 225 | 315 | 420 |
+| COGS | 31 | 44 | 77 | 116 | 157 | 198 |
+| Gross profit | 30 | 36 | 68 | 109 | 158 | 222 |
+| Gross margin | 49% | 45% | 47% | 48% | 50% | 53% |
+| OPEX | 18 | 21 | 34 | 47 | 61 | 83 |
+| EBITDA | 12 | 15 | 34 | 62 | 97 | 139 |
+| EBITDA margin | 20% | 19% | 23% | 28% | 31% | 33% |
+| Depreciation | 2 | 8 | 14 | 22 | 32 | 44 |
+| Pre-tax income | 10 | 7 | 20 | 40 | 65 | 95 |
+| Corporate tax | 2 | 1 | 4 | 8 | 13 | 19 |
+| Net income | 8 | 6 | 16 | 32 | 52 | 76 |
 
-- tonnes of organic waste diverted;
-- tonnes of waste processed;
-- percentage of feedstock valorised;
-- landfill / uncontrolled decomposition avoided where methodologically supportable;
-- tonnes of agricultural input produced locally;
-- distance displaced versus imported inputs;
-- circularity rate.
+The separate:
 
-## Agricultural
+**[Bio_Source_Farm_Projections_Financieres_2026_2030.pdf](<Bio_Source_Farm_Projections_Financieres_2026_2030.pdf>)>**
 
-Potential indicators:
+is the detailed financial companion and should remain aligned with these values.
 
-- farmers reached;
-- hectares covered;
-- product application rates;
-- crop types;
-- measured yield change;
-- soil organic matter change;
-- input cost change;
-- farmer gross margin change.
+---
 
-## Social
+## 16.2 Five-year cumulative central case
 
-Potential indicators:
+2026–2030 central scenario:
 
-- jobs;
-- women employed;
-- young people trained;
-- farmer organisations supported;
-- local procurement;
-- income created in the value chain.
+- revenue: approximately **USD 1.185 million** cumulative;
+- EBITDA: approximately **USD 347k** cumulative;
+- net income: approximately **USD 182k** cumulative.
 
-### Impact-writing rule
+These are model outputs, not historical achievements.
 
-**Count outputs. Attribute outcomes only when evidence supports causality.**
+---
+
+## 16.3 Cash generation
+
+Modelled net cash flow after:
+
+- tax;
+- BFR changes;
+- maintenance CAPEX;
+
+rises approximately from:
+
+- **USD 12k in 2026**
+- **USD 22k in 2027**
+- **USD 42k in 2028**
+- **USD 69k in 2029**
+- **USD 103k in 2030**
+
+The model includes an initial **USD 18k BFR reserve**.
+
+The BNI short-term facility is treated as a safety mechanism, not as an indispensable source of central-scenario financing.
+
+---
+
+# 17. Sensitivity and break-even
+
+## 17.1 2030 scenarios
+
+| Scenario | CA 2030 | EBITDA 2030 | EBITDA margin |
+|---|---:|---:|---:|
+| Prudent | 260k USD | 75k USD | 29% |
+| Central | 420k USD | 139k USD | 33% |
+| Ambitious | 600k USD | 235k USD | 39% |
+| Stress test | 195k USD | 8k USD | 4% |
+
+The stress case combines severe operational and commercial shocks.
+
+No scenario should be described as guaranteed.
+
+---
+
+## 17.2 Univariate sensitivity
+
+The canonical plan tests:
+
+- frass price ±10%;
+- production volume ±15%;
+- substrate / raw-material costs ±20%;
+- capacity utilisation ±10 percentage points;
+- dried-larvae price ±10%.
+
+Modelled effect on cumulative 2026–2030 net income:
+
+| Variable | Tested variation | Approx. cumulative effect |
+|---|---:|---:|
+| Frass selling price | ±10% | ±73k USD |
+| Production volume | ±15% | ±55k USD |
+| Raw materials / substrate cost | ±20% | ∓31k USD |
+| Capacity utilisation | ±10 pts | ±21k USD |
+| Dried-larvae price | ±10% | ±16k USD |
+
+The most material drivers in the model are therefore price and volume.
+
+---
+
+## 17.3 Break-even
+
+The canonical plan distinguishes two thresholds:
+
+- **EBITDA break-even:** approximately **11.7 t frass/month**;
+- **post-depreciation break-even:** approximately **16.1 t/month**.
+
+The 18–22 t/month target is designed to sit above these thresholds, assuming the modelled price and margin conditions are achieved.
+
+---
+
+# 18. Funding request and allocation
+
+## 18.1 Requested amount
+
+**USD 50,000**
+
+Programme:
+
+**ACCELEREO / PIC3 — World Bank Madagascar**
+
+This is the financing case that must appear in the canonical repository README and in any derivative material that claims to reproduce the current business plan.
+
+---
+
+## 18.2 Allocation
+
+| Use | Amount |
+|---|---:|
+| Equipment & capacity increase | **13,500 USD** |
+| B2B commercial development | **8,000 USD** |
+| HR & training | **2,500 USD** |
+| Quality control & laboratory | **2,000 USD** |
+| Working capital / BFR | **18,000 USD** |
+| Technical contingency | **6,000 USD** |
+| **Total** | **50,000 USD** |
+
+The six allocations must always sum to exactly **USD 50,000**.
+
+---
+
+# 19. Milestones linked to the financing
+
+| Period | Budget | Main action | KPI / expected output |
+|---|---:|---|---|
+| M+1 → M+3 | 13.5k USD | Equipment / drying / capacity | Capacity from 10 → 18 t/month |
+| M+2 → M+6 | 6.5k USD | Expansion, HR, training | Production ≥14 t/month; cost <1,000 MGA/kg target |
+| M+3 → M+11 | 8k USD | B2B development | ≥3 new non-FDA B2B customers |
+| M+6 → M+9 | 2k USD | Quality system / lot-type | Lot-type quality validation |
+| Continuous | 18k USD | BFR reserve | Treasury ≥2 months OPEX target |
+| M+9 → M+12 | 6k USD | Contingency | Absorb justified installation / operational shocks |
+| M+12 → M+24 | Total 50k USD | Consolidation / next stage | CA ≥80k USD, then ≥145k USD; EBITDA ≥15k USD |
+
+The critical causal chain is:
+
+> **Funding → equipment → usable capacity → saleable production → commercial conversion → margin → cash → next-stage eligibility**
+
+A future agent must preserve this chain and must not present the financing as an abstract “growth budget”.
+
+---
+
+# 20. Quality and regulatory roadmap
+
+Canonical sequence:
+
+| Milestone | Target |
+|---|---|
+| Lot-type frass validation (NPK, moisture, pathogens) | M+9 |
+| HACCP | T2 2027 |
+| ISO 22000 | T4 2027 |
+| Organic labelling | T2 2028 |
+
+### Regulatory principle
+
+The protein / dried-larvae line is **not represented as fully authorised mass-market revenue**.
+
+Any future document that says “certified”, “approved”, “homologated” or equivalent must identify:
+
+- which product;
+- which authority;
+- which test;
+- which date;
+- which document.
+
+Do not transform an internal SOP target into a legal certification claim.
+
+---
+
+# 21. KPI framework
+
+Canonical 2025 → 2026 → 2027 trajectory:
+
+| KPI | 2025 | 2026 target | 2027 target |
+|---|---:|---:|---:|
+| Monthly production | 10 t | 18–22 t | 26 t |
+| Capacity utilisation | 100% | 88% | 85% |
+| CA | 61k USD | 80k USD | 145k USD |
+| EBITDA | 12k USD | 15k USD | 34k USD |
+| EBITDA margin | 20% | 19% | 23% |
+| Beneficiaries / points tracked cumulative | 930 | 1,300 | 2,500 |
+| Customer retention | 60% | 65% | 70% |
+| Active B2B accounts | 5 | 8 | 12 |
+| Protein revenue | 0 | 0 | 15k USD |
+| Revenue outside FDA | 13% | 30% | 40–45% |
+| Employees | 16 | 19 | 26 |
+| Waste valorised | 400 t | 750 t | 900 t |
+| Farmers supported cumulative | 430 | 640 | 900 |
+
+### KPI verification rule
+
+Where available, KPIs should be tied to evidence:
+
+- production → daily weighing records and lot photos;
+- quality → laboratory reports;
+- treasury → bank statements and cash forecast;
+- B2B accounts → invoices / delivery notes;
+- receivables → aged receivables schedule.
+
+---
+
+# 22. Environmental and social impact
+
+The central narrative is built around:
+
+- diversion of organic waste from unmanaged disposal;
+- production of local agricultural inputs;
+- substitution potential for imported inputs;
+- farmer support;
+- formal job creation;
+- circular-economy value creation.
+
+The canonical plan uses:
+
+- **2,240 t/year** waste diversion as an approximate 2030-scale impact reference;
+- **52 ETP** as a 2030 target;
+- approximately **2,400 farmers supported** as a 2030 trajectory.
+
+These are target / modelled impact figures, not current realised impact.
+
+### Environmental methodology caution
+
+The canonical plan explicitly identifies its emissions methodology as a **proxy methodology**, not a certified project-level carbon inventory.
+
+Future materials must preserve that distinction.
+
+---
+
+# 23. External market references in the canonical plan
+
+The canonical plan cites, among others:
+
+- UN Comtrade / World Bank WITS for fertilizer imports;
+- World Bank solid-waste references;
+- Conservation International AAP;
+- scientific literature on BSF and frass;
+- FOFIFA / local applied research;
+- FAO GLOBEFISH for fishmeal market context;
+- Madagascar animal-feed regulatory references;
+- official / programme sources for PIC3;
+- Pierre Castel recognition;
+- identified local BSF competitors.
+
+### Important temporal discipline
+
+Market data must always be paired with its year.
 
 For example:
 
-Good:
+- fertilizer imports for **2023** must not be presented as **2026**;
+- fertilizer references for **2024** must retain the 2024 date;
+- fishmeal market observations from **2026** must be treated as 2026 observations.
 
-> "BSF trained 100 farmers."
-
-Risky unless demonstrated:
-
-> "BSF increased the income of 100 farmers by 40%."
-
-The second requires evidence.
+Never remove the year from a market statistic when transferring it into a new document.
 
 ---
 
-# 16. Governance, historical financing and legal sensitivity
+# 24. Competitor / substitution logic
 
-The broader BSF history includes complex early financing and asset-support arrangements involving partners / private financing.
+The canonical plan distinguishes:
 
-Future agents must distinguish:
+### Substitutes
 
-- legal ownership;
-- operational use;
-- accounting treatment;
-- loans / advances;
-- CAPEX ownership;
-- site / lease arrangements;
-- reimbursement / repayment;
-- commercial partnership;
-- profit-sharing agreements.
+- imported chemical fertilizers;
+- traditional compost / manure;
+- imported fishmeal.
 
-**Do not infer legal ownership from who paid an invoice.**
+### Direct BSF competitors
 
-**Do not infer equity from a loan.**
+- BSF Tamatave;
+- EXA Feed / Food;
+- other emerging insect-protein operators.
 
-**Do not infer a loan from a bank transfer alone.**
+The competitive advantage claimed for Bio Source Farm is not monopoly. It is a combination of:
 
-When preparing a formal financing dossier, legal status should be based on actual contracts, accounting evidence and corporate documents available for that submission.
+- operating history in Toamasina;
+- adapted know-how;
+- substrate network;
+- documented SOP;
+- existing customer relationships;
+- learning accumulated through repeated production cycles;
+- progressive quality and certification infrastructure.
 
-Sensitive counterparties, account numbers and transaction details should be disclosed only when genuinely required by the funder.
-
----
-
-# 17. Critical reconciliation register
-
-Before any new business plan or financing application is generated, an AI agent should explicitly check the following.
-
-| Topic | Why it matters | Required action |
-|---|---|---|
-| Fiscal year vs calendar year | Can change the interpretation of performance | State period exactly |
-| 2025 performance | Narrative may differ from exceptional treasury period | Reconcile accounting + bank + operations |
-| 2026 treasury pressure | May be driven by financing repayments | Separate operations from financing cash flow |
-| Revenue figures | Different decks/BPs may use different dates | Trace to accounting / invoices |
-| Production capacity | Installed capacity != practical capacity | Reconcile with SOP + actual operations |
-| Waste input | Theoretical supply != usable contracted supply | Build supplier evidence table |
-| Product prices | Legacy and premium prices may coexist | State date, product form and channel |
-| Frass specifications | Lab values can evolve | Use latest valid technical certificate |
-| Comoros agronomy | Country/crop/soil specific | Do not copy Madagascar rates blindly |
-| Forecast growth | Needs operating drivers | Link each year to volume, price and CAPEX |
-| Funding amount | Changes with programme | Rebuild sources & uses for each funder |
-| CAPEX | Must create measurable capacity / quality | Explain operational consequence |
-| Historical financing | Can distort cash analysis | Classify transaction type before modelling |
-| Customer traction | Lead / quote / invoice / delivery are different | Label evidence level |
-| Impact metrics | Claims need proof | Separate output / outcome / target |
+Future work must not claim “no competition”.
 
 ---
 
-# 18. Data-status taxonomy for future agents
+# 25. Document linkage map
 
-Every important number or claim should mentally carry one of these labels.
+The project should be understood as a connected evidence system.
 
-### VERIFIED
+## 25.1 Business Plan ↔ SOP
 
-Supported by formal or primary evidence.
+**Business plan:** explains the industrial model.
 
-Examples:
+**SOP:** proves / documents how the process is intended to operate.
 
-- audited / formal financial statement figure;
-- bank transaction actually visible;
-- signed contract;
-- invoice;
-- laboratory report;
-- documented operational log.
+Use the SOP when a future document needs:
 
-### DOCUMENTED
+- process steps;
+- biological parameters;
+- quality controls;
+- production discipline;
+- technical risk controls.
 
-Present in an internal document but not independently verified for the current submission.
+Do not invent a process step in a new document when it is not in the SOP.
 
-### MANAGEMENT ESTIMATE
+---
 
-Reported by management / team and plausible, but not formally certified.
+## 25.2 Business Plan ↔ Financial Statements
 
-### PROJECTION
+**Business plan:** interprets the historical financial base and builds the forward case.
 
-Forward-looking assumption.
+**Certified accounts:** establish historical accounting facts.
+
+Use the certified statements for:
+
+- historical revenue;
+- historical profit;
+- balance-sheet structure;
+- debt;
+- statutory figures.
+
+Do not revise certified history because a management model uses another perimeter.
+
+---
+
+## 25.3 Business Plan ↔ Financial Projections
+
+**Business plan:** strategic assumptions and narrative.
+
+**Projections:** numerical model.
+
+The projections should reproduce:
+
+- 2026–2030 revenue;
+- EBITDA;
+- net income;
+- capacity / volume assumptions;
+- BFR logic;
+- scenario logic;
+- cash-generation logic.
+
+A change in the financial model that changes the story must trigger a corresponding business-plan update.
+
+---
+
+## 25.4 Business Plan ↔ Banking documents
+
+Bank documents support:
+
+- actual cash movements;
+- actual receipts;
+- actual timing;
+- actual financing transactions.
+
+They are especially useful for separating:
+
+**revenue booked ≠ cash collected ≠ receivable outstanding**
+
+Future financial analyses must maintain this three-way distinction.
+
+---
+
+## 25.5 Business Plan ↔ Pitch Deck
+
+The pitch deck should communicate the canonical business plan.
+
+It should not create:
+
+- another financing amount;
+- another revenue trajectory;
+- another capacity target;
+- another legal status.
+
+If the pitch deck differs from the canonical plan, the plan wins unless an explicit new version is formally adopted.
+
+---
+
+## 25.6 Business Plan ↔ Comoros technical sheet
+
+**[fiche_technique_bio_source_frass v2.5.pdf](<fiche_technique_bio_source_frass v2.5.pdf>)>**
+
+This document is **geography-specific**.
+
+It adapts Bio Source Frass™ to Comoros soils and crops. It must not be used as an automatic replacement for the Madagascar specification.
+
+Examples of information that must remain geographically scoped:
+
+- agronomic dose;
+- soil interpretation;
+- crop recommendations;
+- phosphorus considerations for volcanic / andosol contexts;
+- local trial recommendations.
+
+The Comoros guide uses a strategic commercial reference around **1 t/ha**, with modulation by crop and soil. That does not change the core financial model of the Madagascar business plan.
+
+---
+
+# 26. Known reconciliation hazards
+
+The following items are the most likely sources of model contamination.
+
+## Hazard 1 — TJE financing drift
+
+**Wrong:** import 100 M MGA TJE loan into the current canonical case.
+
+**Correct:** current repository canonical case = **USD 50k ACCELEREO/PIC3 catalytic grant**.
+
+---
+
+## Hazard 2 — Mixing old BP variants with Final 2.0
+
+Legacy plans can contain different:
+
+- legal status;
+- funding structure;
+- historical figures;
+- production yields;
+- market claims;
+- CAPEX schedules.
+
+They are useful for comparison but must not overwrite the canonical plan silently.
+
+---
+
+## Hazard 3 — Calendar vs fiscal year
+
+**2025 management CA = USD 61k**
+
+is not equivalent to:
+
+**FY2024–2025 certified CA = USD 47.78k**
+
+and cannot be mechanically added to the historical certified cumulative.
+
+---
+
+## Hazard 4 — Capacity vs actual production
+
+**18–22 t/month** is a **year-end 2026 capacity target**.
+
+It is not:
+
+- 18–22 t/month average for the whole year;
+- 216–264 t annual production automatically;
+- guaranteed sales.
+
+---
+
+## Hazard 5 — Internal biological assumptions
+
+**30% frass + 15% fresh larvae** is an internal model assumption.
+
+Do not rewrite it as a universal biological law.
+
+---
+
+## Hazard 6 — Pipeline vs revenue
+
+A target customer list is not a revenue forecast by itself.
+
+Only documented commitments should be treated as contracted business.
+
+---
+
+## Hazard 7 — Protein revenue
+
+Protein revenue begins in the canonical model from **2027**, but it remains contingent on technical and regulatory qualification.
+
+A future agent must not turn this conditional line into a fully de-risked current revenue stream.
+
+---
+
+## Hazard 8 — Export
+
+Export is strategic but **excluded from the central revenue forecast**.
+
+Do not add Mauritius / Réunion / Comoros export sales to the 2030 central scenario unless a new, explicit scenario is created.
+
+---
+
+## Hazard 9 — Product price drift
+
+Canonical model references:
+
+- FDA frass: **1,890 MGA/kg**;
+- direct B2B frass: **2,000 MGA/kg**;
+- export reference: **2,500 MGA/kg**, but outside central scenario.
+
+Do not substitute a legacy price without labelling its source and date.
+
+---
+
+## Hazard 10 — Margin terminology
+
+Do not use:
+
+- contribution margin,
+- gross margin,
+- EBITDA margin,
+- net margin,
+
+as if they were synonyms.
+
+Every derivative document should identify its exact numerator and denominator.
+
+---
+
+# 27. Source-of-truth matrix for future work
+
+| Question | Source to use first |
+|---|---|
+| What financing is currently requested? | **Final 2.0 BP** |
+| What is the current strategic business model? | **Final 2.0 BP** |
+| What is the five-year central forecast? | **Final 2.0 BP + Projections PDF** |
+| What happened historically in accounting terms? | **Certified financial statements** |
+| Was cash actually received? | **BNI / BOA statements + credit notices** |
+| How does the production process work? | **Master SOP** |
+| What are the current process risks? | **Master SOP + BP risk matrix** |
+| What is a commercial prospect vs signed business? | **BP pipeline + contracts / invoices** |
+| What is the intended public narrative? | **Canonical BP first, pitch second** |
+| What are Comoros-specific agronomic recommendations? | **Comoros technical sheet** |
+| Is BP 3.1 authoritative over Final 2.0? | **No; reconcile first** |
+
+---
+
+# 28. Data classification rules
+
+Every important statement in future documents should be tagged mentally — or explicitly when the document is technical — as one of:
+
+### REALISED / VERIFIED
+
+Directly supported by a primary document.
+
+### MANAGEMENT / ANALYTICAL
+
+Internal reconstruction, estimate or management reporting.
+
+### MODELLED
+
+A forward-looking assumption or projection.
 
 ### TARGET
 
-A desired future state.
+Desired future KPI or milestone.
 
-### LEGACY
+### CONDITIONAL
 
-Older number retained for historical context but not necessarily current.
+Only happens if a regulatory, commercial or technical gate is passed.
 
-### CLAIM TO VALIDATE
+### CONTEXTUAL
 
-Narrative assertion requiring evidence before submission.
+External market / scientific / geographical information that supports the analysis but does not prove BSF performance.
 
-### DO NOT USE
+### UNVERIFIED
 
-Outdated, superseded, ambiguous or contradicted information.
+A statement present in a legacy or secondary document that has not been reconciled against the canonical evidence base.
 
----
-
-# 19. Recommended evidence tags inside future working documents
-
-When working internally, agents should use tags such as:
-
-- `[FACT-HIST]`
-- `[FACT-BANK]`
-- `[FACT-TECH]`
-- `[DOC]`
-- `[MGMT]`
-- `[ASSUMPTION]`
-- `[TARGET]`
-- `[LEGACY]`
-- `[TO-VERIFY]`
-
-These tags do not necessarily need to appear in the final lender-facing document. They are for internal reasoning and QA.
+This classification is essential to avoid turning assumptions into facts.
 
 ---
 
-# 20. How to build a lender-grade business plan from this corpus
+# 29. AI processing protocol
 
-A strong BSF BP should normally contain:
+Any future AI agent working on this repository should follow this order.
 
-## Executive summary
+## Step 1 — Identify the task
 
-Answer in one page:
+Determine whether the request is:
 
-- What problem?
-- What solution?
-- What proof?
-- Why now?
-- What is already working?
-- What is being financed?
-- How much?
-- What will the money unlock?
-- How is the facility repaid / how does the business sustain itself?
-- What measurable impact follows?
-
-## Company
-
-Explain:
-
-- origin;
-- operating base;
-- technology;
-- experience;
-- team;
-- legal status;
-- current footprint.
-
-## Problem
-
-Quantify, where evidence exists:
-
-- organic waste challenge;
-- cost of disposal;
-- agricultural input constraints;
-- soil fertility challenges;
-- import dependence;
-- local supply gaps.
-
-## Solution
-
-Explain the BSF conversion process and why it is appropriate.
-
-## Products
-
-For each product:
-
-- customer;
-- use case;
-- specification;
-- form;
-- pricing;
-- production method;
-- differentiation;
-- evidence;
-- regulatory considerations.
-
-## Market
-
-Separate:
-
-- total market;
-- serviceable market;
-- initial target market;
-- actual customers;
-- reachable geography.
-
-Do not use enormous TAM figures without a realistic route to market.
-
-## Traction
-
-Show:
-
-- revenue;
-- repeat customers;
-- tonnage;
-- hectares;
-- farmers;
-- signed orders;
-- invoices;
-- partnerships;
-- technical validation.
-
-## Operations
-
-Link:
-
-**input -> process -> capacity -> output -> quality -> packaging -> logistics -> customer**
-
-## Team
-
-Use actual roles and responsibilities.
-
-## Business model
-
-Explain who pays BSF and why.
-
-## Impact
-
-Use quantified indicators with evidence levels.
-
-## Risk
-
-At minimum:
-
-- feedstock supply;
-- biological performance;
-- quality;
-- contamination;
-- customer adoption;
-- pricing;
-- logistics;
-- working capital;
-- key-person risk;
-- regulatory;
-- climate / seasonality.
-
-Each risk should have:
-
-- probability;
-- consequence;
-- mitigation;
-- monitoring indicator.
-
-## Financing
-
-Every funding request must contain:
-
-### Sources
-
-Where the money comes from.
-
-### Uses
-
-Where each euro / MGA goes.
-
-### Link to impact / growth
-
-What the expenditure changes.
-
-### Repayment / sustainability
-
-For debt: show debt service logic.
-
-For grants: show what happens after the grant period.
-
----
-
-# 21. Financing-use test
-
-Every requested expenditure should pass four tests:
-
-1. **Necessary**
-2. **Eligible**
-3. **Measurably useful**
-4. **Affordable / realistic**
-
-A useful funding table looks like:
-
-| Use | Amount | Type | Why needed | Operational effect | Timing | Evidence | Eligibility |
-|---|---:|---|---|---|---|---|---|
-
-Avoid vague categories such as:
-
-> "Other costs"
-
-unless the funder explicitly allows them.
-
----
-
-# 22. Sensitivity analysis
-
-Future financial models should normally stress at least:
-
-### Downside
-
-- lower sales volume;
-- slower ramp-up;
-- lower realised selling price;
-- higher logistics cost;
-- delayed CAPEX;
-- higher working-capital requirement.
-
-### Base
-
-Management's best evidence-based operating case.
-
-### Upside
-
-Only where the operating drivers support it.
-
-The model should make it possible to understand **which assumptions actually drive cash generation**.
-
-Do not manufacture an "upside" simply to improve the presentation.
-
----
-
-# 23. What a strong BSF financial story should demonstrate
-
-A credible evaluator should be able to trace the whole chain:
-
-**funding -> CAPEX / working capital -> higher operational capacity -> increased sellable output -> sales -> gross margin -> OPEX absorption -> operating cash generation -> repayment / reinvestment**
-
-If the model jumps from:
-
-**funding -> huge revenue**
-
-without operational mechanisms, it is weak.
-
----
-
-# 24. Design and visual-identity guidance for future AI design agents
-
-When generating presentation, brochure or business-plan visuals:
-
-## Brand identity
-
-- Preserve the BSF logo unless explicitly asked to redesign it.
-- Preserve the essence of the **"Turning Waste to Treasures"** positioning.
-- Use a sober, credible, agricultural / circular-economy visual language.
-- Brown / earth / natural tones are consistent with the established BSF visual direction.
-- Avoid generic "green startup" clichés that make the company look like any other environmental NGO.
-
-## Preferred visual language
-
-Use visual evidence:
-
-- feedstock;
-- BSF larvae;
-- production bins;
-- processing;
-- frass;
-- farmers;
-- crops;
-- bags / packaging;
-- transformation flows;
-- measurable impact.
-
-Avoid excessive:
-
-- stock photos;
-- decorative leaves;
-- futuristic AI imagery unrelated to the industrial reality;
-- fake laboratory scenes;
-- oversized ESG icons with no data.
-
-## Business-plan design
-
-Priorities:
-
-1. readability;
-2. data credibility;
-3. visual hierarchy;
-4. consistent units;
-5. evidence traceability;
-6. restrained design.
-
-A funding committee should be able to understand the numbers before appreciating the design.
-
----
-
-# 25. Recommended visual storytelling sequence for a pitch deck
-
-A strong generic BSF deck can use:
-
-1. The waste problem
-2. The agricultural / input problem
-3. BSF's circular solution
-4. How the process works
-5. Products
-6. Customers / traction
-7. Evidence of production capability
-8. Market opportunity
-9. Business model
-10. Impact
-11. Growth plan
-12. Financing need
-13. Use of funds
-14. Financial outlook
-15. Team
-16. Risk control
-17. The ask / next milestone
-
-Do not start with a giant market-size slide and wait until slide 10 to prove that BSF can actually produce and sell.
-
----
-
-# 26. Future AI prompt template
-
-The following structure should be used whenever delegating work to a specialised AI agent.
-
----
-
-## CONTEXT
-
-You are working on Bio Source Farm (BSF), Madagascar.
-
-Read `README.md` first.
-
-Do not assume that a document is authoritative simply because its filename contains "Final".
-
-## TASK
-
-[Describe the exact deliverable]
-
-Example:
-
-> Build a lender-grade business plan for [FUNDER] for a financing request of [AMOUNT].
-
-## REQUIRED SOURCE DOCUMENTS
-
-Use these exact files:
-
-- [file 1]
-- [file 2]
-- [file 3]
-
-## SOURCE PRIORITY
-
-Historical financial facts:
-
-1. formal financial statements
-2. analytical financial workbook
-3. bank statements
-4. narrative business plans
-5. pitch deck
-
-Technical process:
-
-1. industrial SOP
-2. technical sheets
-3. narrative documents
-
-Forecasts:
-
-1. financial projection model
-2. assumptions explicitly validated against historical evidence
-
-## NON-NEGOTIABLE RULES
-
-- Do not invent missing numbers.
-- Flag contradictions.
-- Separate historical / current / projected / target values.
-- State period and units for every material financial figure.
-- Distinguish profit from cash.
-- Distinguish CAPEX from OPEX.
-- Distinguish financing flows from operations.
-- Link every growth assumption to an operating driver.
-- Preserve BSF's logo and identity unless instructed otherwise.
-- Do not overstate impact.
-- Do not use unsupported market-size figures.
-
-## OUTPUT QA
-
-Before finalising:
-
-- reconcile revenue;
-- reconcile production capacity;
-- reconcile product prices;
-- reconcile funding amount;
-- reconcile fiscal periods;
-- check sources and uses;
-- test cash flow;
-- test debt service if applicable;
-- check that no "fill-in" figures remain;
-- produce a list of unresolved assumptions.
-
----
-
-# 27. AI operating protocol: 12 steps
-
-For complex assignments, the recommended protocol is:
-
-### Step 1 — Inventory
-
-List every relevant source file.
-
-### Step 2 — Classify
-
-Assign each source:
-
-- financial;
-- technical;
-- narrative;
-- banking;
-- market;
-- agronomic;
-- legal;
-- presentation.
-
-### Step 3 — Establish date
-
-Record:
-
-- document date;
-- covered period;
-- creation / version date if available.
-
-### Step 4 — Extract claims
-
-Create a working list of:
-
-- numbers;
-- statements;
-- capacities;
-- prices;
-- customers;
-- financing claims;
-- impact claims.
-
-### Step 5 — Evidence-grade each claim
-
-Tag as:
-
-- VERIFIED;
-- DOCUMENTED;
-- MGMT;
-- PROJECTION;
-- TARGET;
-- LEGACY;
-- TO-VERIFY.
-
-### Step 6 — Reconcile
-
-Resolve inconsistencies before narrative drafting.
-
-### Step 7 — Build operating model
-
-Waste -> throughput -> conversion -> product output -> sales.
-
-### Step 8 — Build financial model
-
-Volume x price -> revenue -> COGS -> gross margin -> OPEX -> EBITDA / operating result -> cash -> financing.
-
-### Step 9 — Build impact model
-
-Waste + farmers + hectares + jobs + environmental indicators.
-
-### Step 10 — Adapt to funder
-
-Translate the same real business into the funder's:
-
-- eligibility;
-- terminology;
-- budget format;
-- impact priorities;
-- risk requirements;
-- reporting logic.
-
-### Step 11 — Produce design
-
-Only after the facts are locked.
-
-### Step 12 — Final evaluator audit
-
-Ask:
-
-> "What would make a skeptical lender reject this document?"
-
-Fix those issues first.
-
----
-
-# 28. Evaluator red flags specific to BSF-type dossiers
-
-Future agents should actively test for these red flags.
-
-### Red flag 1 — Growth without capacity
-
-Projected sales grow much faster than actual production capability.
-
-### Red flag 2 — Waste abundance without contracts
-
-Large waste numbers but no identified sources, logistics or agreements.
-
-### Red flag 3 — Price optimism
-
-Premium product prices applied to all sales.
-
-### Red flag 4 — One product carries the whole company
-
-No consideration of product mix.
-
-### Red flag 5 — Impact claims exceed evidence
-
-Targets presented as measured outcomes.
-
-### Red flag 6 — Debt described as investment
-
-Debt / repayment burden hidden in narrative.
-
-### Red flag 7 — Exceptional cash event interpreted as operating failure
-
-This is particularly dangerous when reviewing BSF's historical treasury story.
-
-### Red flag 8 — Partial-year figures annualised without explanation
-
-Can radically distort performance.
-
-### Red flag 9 — CAPEX list without throughput effect
-
-A shopping list is not a growth strategy.
-
-### Red flag 10 — "TAM" used as proof of demand
-
-Market size does not equal customer demand.
-
-### Red flag 11 — Too many future products
-
-The BP should distinguish commercial core from R&D pipeline.
-
-### Red flag 12 — Unclear unit economics
-
-A business can show revenue and still fail to demonstrate contribution margin per tonne / kg / customer.
-
----
-
-# 29. Minimum unit-economics dashboard
-
-Whenever data permits, calculate:
-
-### Feedstock economics
-
-- cost per tonne of usable substrate;
-- collection cost / tonne;
-- preprocessing cost / tonne.
-
-### Production economics
-
-- labour / tonne;
-- utilities / tonne;
-- packaging / tonne;
-- direct production cost / tonne;
-- frass COGS / kg;
-- larval biomass COGS / kg.
-
-### Commercial economics
-
-- average selling price;
-- gross margin / kg;
-- gross margin / tonne;
-- customer acquisition cost where measurable;
-- collection / delivery cost;
-- payment period.
-
-### Capital efficiency
-
-- CAPEX / additional tonne annual capacity;
-- revenue / installed capacity;
-- gross profit / CAPEX.
-
-These ratios often matter more to an evaluator than a long narrative.
-
----
-
-# 30. Recommended KPIs
-
-A future BSF management dashboard should track at least:
-
-## Production
-
-- substrate received (t);
-- substrate accepted (t);
-- larvae production (kg);
-- frass production (kg);
-- conversion / yield indicators;
-- cycle duration;
-- mortality / biological loss;
-- reject rate.
-
-## Quality
-
-- moisture;
-- nutrient profile;
-- contamination;
-- batch traceability;
-- customer complaints.
-
-## Commercial
-
-- revenue;
-- tonnes sold;
-- ASP;
-- repeat customer rate;
-- receivables;
-- customer concentration.
-
-## Financial
-
-- gross margin;
-- OPEX;
-- EBITDA / operating result;
-- cash balance;
-- working capital;
-- debt service;
-- capex deployed.
-
-## Impact
-
-- tonnes of waste diverted;
-- farmers served;
-- hectares supplied;
-- jobs;
-- women / youth participation where measurable.
-
----
-
-# 31. Data and privacy rules for this repository
-
-This repository contains or may contain:
-
-- bank statements;
-- transaction-level information;
-- financial data;
-- partner information;
-- potentially sensitive commercial information.
-
-Future agents must follow data minimisation:
-
-### Safe to summarise publicly
-
-- aggregate financial performance;
-- business model;
-- product categories;
-- aggregate impact;
-- financing amount requested;
-- high-level partnership information.
-
-### Avoid exposing publicly unless required
-
-- bank-account numbers;
-- personal identifiers;
-- precise transaction references;
-- private addresses;
-- authentication or security details;
-- confidential commercial terms;
-- unnecessary counterpart financial details.
-
-The README itself should remain a **business-context layer**, not a reproduction of sensitive banking documentation.
-
----
-
-# 32. Current strategic framing for future funding work
-
-The BSF story can be framed around five mutually reinforcing pillars:
-
-## Pillar 1 — Waste
-
-Reliable organic feedstock is the input moat.
-
-## Pillar 2 — Biology
-
-BSF conversion is the core technology / operational know-how.
-
-## Pillar 3 — Agriculture
-
-Frass converts waste valorisation into a local agricultural value proposition.
-
-## Pillar 4 — Biomass
-
-Larval biomass provides an additional value stream and diversification path.
-
-## Pillar 5 — Scale
-
-Equipment, process standardisation, quality control, commercial channels and working capital transform a successful pilot / SME operation into an industrial business.
-
-This is stronger than presenting BSF only as "a waste project".
-
----
-
-# 33. Strategic narrative for institutional funders
-
-For public / institutional / development funders, the story should usually connect:
-
-**environmental externality + agricultural productivity constraint + local industrial solution + jobs + measurable impact + sustainable business model**
-
-The funder should understand:
-
-- why public / catalytic capital is useful;
-- what market failure is being addressed;
-- what private revenue can sustain;
-- what happens after funding ends;
-- what measurable outcomes the project creates.
-
-Avoid creating a business plan that reads like an NGO project if the financing instrument is intended for a commercial enterprise.
-
----
-
-# 34. Strategic narrative for banks
-
-For banks, the emphasis should shift toward:
-
-- actual repayment capacity;
-- recurring revenues;
-- gross margin;
-- operating cash generation;
-- working capital;
-- customer concentration;
-- debt service;
-- collateral / security where relevant;
-- management experience;
-- operational controls;
-- conservative downside case.
-
-A bank does not finance "potential" in the abstract.
-
-It finances a credible path from:
-
-**asset / working capital -> operating activity -> cash generation -> repayment**
-
----
-
-# 35. Strategic narrative for grants
-
-For grant funders, emphasize:
-
-- additionality;
-- innovation;
-- environmental impact;
-- inclusion;
-- demonstration effect;
-- replication;
-- market failure;
-- evidence;
-- monitoring & evaluation.
-
-But do not turn the financial model into a fiction simply because the funder is a grant provider.
-
----
-
-# 36. Strategic narrative for investors
-
-For equity / impact investors, emphasize:
-
-- scalable unit economics;
-- defensibility;
-- operating leverage;
-- market size;
-- growth;
-- team;
-- capital efficiency;
-- exit / liquidity pathway if relevant.
-
-Again: growth must come from operating drivers, not spreadsheet cosmetics.
-
----
-
-# 37. Recommended "master facts" table for every future project
-
-Before writing, build a table like this internally:
-
-| Field | Value | Status | Source | Period | Notes |
-|---|---|---|---|---|---|
-| Company | Bio Source Farm | VERIFIED/DOC | corporate docs | current | legal entity name must be checked |
-| Location | Toamasina | DOCUMENTED | BP / operating docs | current | confirm for specific project |
-| Technology | BSF bioconversion | VERIFIED/DOCUMENTED | SOP | current | |
-| Employees | ~16 | MGMT/DOC | operating dossier | current baseline | verify latest payroll |
-| Substrate input | ~1.6 t/day | MGMT/DOC | operating docs | current baseline | not automatically annual capacity |
-| Frass output | ~20 t/month | MGMT/DOC | operating docs | current baseline | verify measurement method |
-| Fresh larvae | ~300-500 kg/month | MGMT/DOC | operating docs | current baseline | verify saleable fraction |
-| Frass price | context-specific | TO-VERIFY | commercial docs | current | separate premium vs minimum |
-| Historical revenue | [source value] | VERIFIED | financial statements | relevant fiscal period | exact period required |
-| Forecast revenue | [model value] | PROJECTION | projections | 2026-2030 | assumption-driven |
-| Funding ask | [funder-specific] | TARGET | current application | current | rebuild by programme |
-
-The point is not the exact table format; the point is to **never let a number float without provenance**.
-
----
-
-# 38. Business-plan consistency rules
-
-Before submission, verify:
-
-### Narrative -> numbers
-
-Every material narrative claim has a number or evidence behind it.
-
-### Numbers -> operations
-
-Every major number has an operating mechanism.
-
-### Operations -> CAPEX
-
-Every major CAPEX line has an operational effect.
-
-### CAPEX -> revenue
-
-Revenue growth depends on actual added capacity / access / quality / sales.
-
-### Revenue -> cash
-
-Sales timing and payment terms produce a plausible cash profile.
-
-### Cash -> financing
-
-Debt repayment / grant timing is explicitly modelled.
-
-### Impact -> measurement
-
-Each impact claim has a defined metric and data source.
-
----
-
-# 39. What to do when information is missing
-
-Use this priority order:
-
-1. Find it in another repository source.
-2. Check whether the difference is due to period / unit / definition.
-3. Check accounting + bank + operational evidence.
-4. Mark it `TO-VERIFY`.
-5. Ask BSF for the missing evidence when a final submission genuinely requires it.
-
-Do **not** invent a value because "the model needs one".
-
-When an assumption is unavoidable, label it and explain its effect.
-
----
-
-# 40. What "expert-level" means for this repository
-
-An expert AI working on BSF should be capable of doing more than rewriting existing documents.
-
-It should be able to:
-
-- identify contradictions;
-- distinguish evidence from rhetoric;
-- rebuild unit economics;
-- trace a funding request to operational output;
-- test whether capacity supports projected sales;
-- identify financial bottlenecks;
-- model scenarios;
-- identify evaluator objections before submission;
-- tailor the same real business to grants, banks, DFIs and impact investors;
-- preserve scientific / agronomic credibility;
-- preserve documentary traceability;
-- avoid fabricated specificity.
-
-The objective is not to make the dossier sound impressive.
-
-The objective is to make it **survive skeptical scrutiny**.
-
----
-
-# 41. Final evaluator checklist
-
-Before any financing package is delivered, the agent should answer "yes" to all of these.
-
-## Documentary
-
-- [ ] All relevant repository documents reviewed.
-- [ ] Sources classified by authority.
-- [ ] Dates / periods identified.
-- [ ] Conflicts explicitly reconciled.
-- [ ] Outdated figures excluded or labelled.
-
-## Financial
-
-- [ ] Historical figures traced to formal evidence.
-- [ ] Profit and cash clearly separated.
-- [ ] Exceptional financing events identified.
-- [ ] Revenue built from units x prices.
-- [ ] COGS and OPEX separated.
-- [ ] CAPEX linked to operating effect.
-- [ ] Working capital included.
-- [ ] Funding sources and uses reconcile.
-- [ ] Downside case tested.
-- [ ] No invented figures.
-
-## Operational
-
-- [ ] Capacity reconciled with SOP.
-- [ ] Waste supply is realistic.
-- [ ] Seasonality considered.
-- [ ] Product mix is explicit.
-- [ ] Quality controls are credible.
-- [ ] Logistics are modelled.
-
-## Commercial
-
-- [ ] Customers are distinguished from prospects.
-- [ ] Contracts / invoices / deliveries are distinguished.
-- [ ] Pricing is evidence-based.
-- [ ] Market size is not confused with demand.
-- [ ] Sales ramp has an execution mechanism.
-
-## Impact
-
-- [ ] Outputs separated from outcomes.
-- [ ] Impact metrics are measurable.
-- [ ] Claims do not exceed evidence.
-- [ ] Environmental and social claims are quantified where possible.
-
-## Design
-
-- [ ] Logo unchanged unless explicitly authorised.
-- [ ] Brand is coherent.
-- [ ] Data are legible.
-- [ ] No decorative inflation.
-- [ ] Visuals support the business story.
-- [ ] Key numbers are easy to find.
-
----
-
-# 42. One-line operating doctrine
-
-> **Use the documents as evidence, the SOP as the operational reality, the financial statements and bank records as the historical anchor, the projections as hypotheses to test, and every funding request as an operational investment case that must explain exactly how money becomes capacity, sales, cash and measurable impact.**
-
----
-
-## Appendix A — Short file-selection guide
-
-### "Build a business plan"
-
-Start with:
-
-- this README;
-- `états financiers 2024 à 2025.pdf`;
-- `Rapport financier BSF 2023-2025 Final.xlsx`;
-- `Bio_Source_Farm_Business_Plan_2026_Final 2.0.pdf`;
-- `BioSourceFarm_Master_SOP_Industriel.pdf`;
-- `Bio_Source_Farm_Projections_Financieres_2026_2030.pdf`;
-- relevant bank statements.
-
-### "Build a lender application"
-
-Prioritise:
-
-- formal financial statements;
-- financial workbook;
-- BNI / BOA statements;
-- current business plan;
-- projections;
-- SOP;
-- current financing programme rules.
-
-### "Build a grant application"
-
-Prioritise:
-
-- business plan;
-- SOP;
-- traction evidence;
-- impact evidence;
-- field projects;
-- financing use;
-- financial statements;
-- projections.
-
-### "Build a pitch deck"
-
-Prioritise:
-
-- current business plan;
+- business plan rewriting;
+- investor memorandum;
+- grant application;
+- TJE application;
+- financial model;
+- technical SOP;
 - pitch deck;
-- SOP;
-- financial evidence;
-- traction / impact evidence.
+- agronomic sheet;
+- market study;
+- impact report;
+- visual design.
 
-Use the pitch deck for structure, not as the final numerical authority.
-
-### "Build an agronomic / product sheet"
-
-Prioritise:
-
-- current Bio Source Frass technical data;
-- laboratory analysis;
-- SOP / production controls where relevant;
-- `fiche_technique_bio_source_frass_comores v2.5.pdf` for Comoros-specific work.
+Do not assume that all of these use the same financing case.
 
 ---
 
-## Appendix B — Suggested future repository structure
+## Step 2 — Load the canonical BP first
 
-As the corpus grows, consider organising future files into:
+Read:
 
-```
-/README.md
+**Bio_Source_Farm_Business_Plan_2026_Final 2.0.pdf**
 
-/01_CORPORATE/
-  legal/
-  registration/
-  governance/
-
-/02_FINANCIAL/
-  historical/
-  bank/
-  accounting/
-  projections/
-
-/03_BUSINESS_PLANS/
-  current/
-  legacy/
-
-/04_TECHNICAL/
-  SOP/
-  product-specs/
-  laboratory/
-
-/05_MARKET/
-  customers/
-  contracts/
-  market-studies/
-
-/06_PROJECTS/
-  CI-AAP/
-  MCC/
-  Symabio/
-  Comoros/
-
-/07_FUNDING/
-  grants/
-  banks/
-  DFI/
-  impact-investors/
-
-/08_PITCH/
-  current/
-  legacy/
-
-/09_IMPACT/
-  M&E/
-  field-results/
-
-/10_DESIGN/
-  brand/
-  templates/
-  assets/
-```
-
-This structure is recommended for future additions. Do not reorganise the current repository automatically unless explicitly requested.
+before reading derivative materials.
 
 ---
 
-## Appendix C — Golden rule for future AI collaboration
+## Step 3 — Retrieve only the supporting sources needed
 
-When an AI agent finishes a BSF deliverable, it should be possible for another agent to answer three questions quickly:
+Typical sequence:
 
-1. **Where did this number come from?**
-2. **Why is this number credible for this period?**
-3. **What operational mechanism makes this number possible?**
+1. canonical BP;
+2. certified accounts;
+3. bank evidence;
+4. projections;
+5. SOP;
+6. pitch / presentations;
+7. specialised geographic documents;
+8. legacy plans only for reconciliation.
 
-If any of those three questions cannot be answered, the document is not finished.
+---
+
+## Step 4 — Build a mini evidence matrix
+
+For every critical figure:
+
+| Field | Value | Source | Date / period | Status |
+|---|---|---|---|---|
+| CA | … | … | … | certified / management / forecast |
+| EBITDA | … | … | … | management / forecast |
+| Capacity | … | … | … | actual / target |
+| Price | … | … | … | observed / assumed |
+| Customer | … | … | … | contracted / pipeline |
+| Product | … | … | … | current / conditional |
+
+Never write the new document before this table exists conceptually.
+
+---
+
+## Step 5 — Reconcile before synthesising
+
+If two sources disagree:
+
+1. identify the date;
+2. identify the perimeter;
+3. identify the evidence level;
+4. identify whether one is a forecast and the other historical;
+5. determine which document is canonical for the task;
+6. only then select the number.
+
+Never average two conflicting figures merely to make them agree.
+
+---
+
+## Step 6 — Protect the central scenario
+
+For the current BP:
+
+**Central scenario = domestic business, no export revenue.**
+
+Export is an option, not a hidden contribution to the central case.
+
+---
+
+## Step 7 — Keep conditional products conditional
+
+Protein and bioactivator revenues require gates.
+
+Do not describe them as “already secured” unless evidence proves it.
+
+---
+
+## Step 8 — Preserve accounting periods
+
+Never mix:
+
+- fiscal year;
+- calendar year;
+- rolling period;
+- monthly run-rate;
+- annualised value.
+
+If a conversion is necessary, label it explicitly as a conversion.
+
+---
+
+## Step 9 — Recalculate percentages
+
+Never trust a copied percentage when the underlying absolute values are available.
+
+Recalculate:
+
+- margins;
+- revenue shares;
+- growth rates;
+- financing allocations;
+- capacity utilisation;
+- BFR coverage.
+
+---
+
+## Step 10 — Run a contamination check
+
+Before delivering, search for:
+
+- “TJE”;
+- “100,000,000 MGA”;
+- “120,000,000 MGA”;
+- “0% loan”;
+- “36 months”;
+- outdated revenue figures;
+- old capacity figures;
+- unsupported “certified” claims;
+- “export revenue” inserted into the central case.
+
+If any appear, determine whether they belong to the requested task. If not, remove them.
+
+---
+
+# 30. Minimum QA checklist before any new BSF deliverable
+
+A future document is not ready until all of the following are true:
+
+- [ ] The correct business-plan version was used.
+- [ ] The financing instrument matches the requested programme.
+- [ ] Historical figures are separated from management figures.
+- [ ] Forecasts are separated from realised data.
+- [ ] Capacity is distinguished from production and sales.
+- [ ] Pipeline is distinguished from contracted revenue.
+- [ ] Product maturity is correctly stated.
+- [ ] Regulatory claims are backed by evidence.
+- [ ] Export is not inserted into the domestic central case.
+- [ ] All major percentages reconcile to their absolute values.
+- [ ] Financing allocation sums correctly.
+- [ ] No bank-account or unnecessary private identifiers are exposed.
+- [ ] Legacy documents are clearly marked as legacy / comparative.
+- [ ] Every material number has an identifiable source.
+- [ ] The final narrative is internally consistent across executive summary, tables, financial model and conclusion.
+
+---
+
+# 31. Recommended naming / version-control convention
+
+Future canonical documents should ideally follow a stable pattern:
+
+Bio_Source_Farm_<DocumentType>_<Year>_<Version>
+
+Examples:
+
+- Bio_Source_Farm_Business_Plan_2027_v1.pdf
+- Bio_Source_Farm_Financial_Model_2026_2030_v2.xlsx
+- Bio_Source_Farm_Technical_Specification_FPS_v1.pdf
+
+Whenever a new canonical business plan supersedes Final 2.0, this README must be updated at the same time.
+
+The old plan should remain available as an archived source, not silently overwritten.
+
+---
+
+# 32. Canonical quick-reference card
+
+For rapid AI ingestion, the current repository case can be summarised as:
+
+~~~text
+ENTITY
+Bio Source Farm (B.S.F.)
+Toamasina, Madagascar
+
+TECHNOLOGY
+Black Soldier Fly (Hermetia illucens)
+Organic substrate bioconversion
+
+CURRENT CORE PRODUCT
+Bio Source Frass™
+
+CONDITIONAL GROWTH PRODUCT
+Dried larval protein
+
+FUTURE PRODUCT
+Bioactivators / extracts
+
+HISTORICAL CERTIFIED BASE
+FY2023-2024:
+CA 146.0 M MGA / $32.43k
+Net income 41.3 M MGA / $9.18k
+
+FY2024-2025:
+CA 215.0 M MGA / $47.78k
+Net income 66.6 M MGA / $14.79k
+
+2-YEAR CERTIFIED TOTAL
+CA 361.0 M MGA / $80.21k
+Net income 107.9 M MGA / $23.97k
+
+CURRENT OPERATING BASE
+16 ETP
+10 t/month reference capacity
+
+2026 TARGET
+18–22 t/month by year-end
+CA $80k
+EBITDA $15k
+
+2030 CENTRAL CASE
+56 t/month capacity
+CA $420k
+EBITDA $139k
+Net income $76k
+54% revenue outside FDA
+0 export revenue in central case
+
+FINANCING CASE
+$50,000 catalytic grant
+ACCELEREO / PIC3 — World Bank
+
+USE OF FUNDS
+$13.5k equipment/capacity
+$8.0k B2B
+$2.5k HR/training
+$2.0k quality/lab
+$18.0k BFR
+$6.0k contingency
+
+REFERENCE FX
+4,500 MGA / USD
+
+KEY BREAK-EVEN
+EBITDA ≈ 11.7 t/month
+After depreciation ≈ 16.1 t/month
+
+CENTRAL SCENARIO
+Domestic / no export revenue
+Protein revenue conditional from 2027
+~~~
+
+---
+
+# 33. Final operating principle
+
+The strongest version of Bio Source Farm is not obtained by adding more numbers.
+
+It is obtained by preserving the causal and evidentiary chain:
+
+> **proven historical activity → documented production process → identified bottleneck → targeted financing → measurable operational improvement → commercial diversification → improved unit economics → cash generation → controlled scale-up**
+
+Every future business plan, grant application, financial model, investment memo, pitch deck or design produced from this repository should make that chain easier to verify, not harder.
+
+**Canonical planning reference: Bio_Source_Farm_Business_Plan_2026_Final 2.0.pdf.**
